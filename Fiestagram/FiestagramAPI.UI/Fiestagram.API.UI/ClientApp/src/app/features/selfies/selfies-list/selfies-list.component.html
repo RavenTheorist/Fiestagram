@@ -1,0 +1,7 @@
+<!-- <ul>
+    <li *ngFor="let selfie of selfies">
+      {{ selfie.user.name }}
+    </li>
+</ul> -->
+
+<app-one-selfie-readonly [selfie]="currentSelfie" *ngFor="let currentSelfie of selfies"></app-one-selfie-readonly>

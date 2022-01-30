@@ -1,0 +1,26 @@
+<app-menu-general (onSearchLaunched)="searchSelfie($event)"></app-menu-general>
+
+<h1>{{ title }}</h1>
+<h2>{{ subtitle }}</h2>
+
+<app-codingame label='Hello World' color='red'></app-codingame>
+<br /><p>______________________________________________________<br /></p>
+
+<app-structural-directives></app-structural-directives>
+<br /><p>______________________________________________________<br /></p>
+
+<app-parent></app-parent>
+
+<div class="container">
+  <main class="container">
+    <div class="row">
+      <div class="col-sm-9">
+        <app-selfies-list [filter]="searchedText"></app-selfies-list>
+      </div>
+    </div>
+  </main>
+
+  <app-home></app-home>
+  <!--<router-outlet></router-outlet>-->
+
+</div>
